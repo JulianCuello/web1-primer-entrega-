@@ -1,0 +1,619 @@
+/* MOBILE */
+
+.grid-container  { 
+   display: grid;  
+   grid-template-columns: 1;
+   grid-template-rows: 3;
+   
+ 
+ }
+ .header {
+   grid-area: 1/1;  
+   background-color: black; 
+   color:white
+  }
+  .nav-group { 
+  
+   display: none;
+   flex-direction: column;
+   list-style: none;
+ }
+
+ .nav-group.show {
+ display: flex;
+ flex-direction: column;
+ }
+ 
+ .nav-button {
+   
+    background:  cornflowerblue;
+    color: rgb(250, 250, 250);
+    padding: 2px  6px;
+    border-radius: 10px;
+    font-family: monospace;
+    text-decoration: none;
+    font-size: 17px;
+    margin-right: 25px;
+    
+   }
+ 
+ .nav-button a {
+ 
+    text-decoration: none;
+    }
+ 
+ .nav-button a:visited {
+       color: rgb(250, 250, 250);
+ } 
+
+   .main {
+   grid-area: 2/1;  
+
+   }
+   .imgRunning {      
+       
+      width: 100%;  
+      height: 100%;     
+    
+    }
+   .estilotabla {
+ 
+      background-color:rgb(9, 177, 243);
+      font-size: 20px;
+    }
+   
+    table, td, th {
+      
+      border: 2px solid rgb(212, 235, 245);
+      font-family: sans-serif;
+      margin-left: 2%;
+      font-size: 100%;
+      margin-top: 2%;
+    }
+    
+    .tablehead {
+      
+      text-align: center;
+    }
+    
+    .celdas {
+     
+      background-color: rgba(114, 114, 170, 0.5);
+      text-align: center;
+      font-size: 100%;
+    }
+    .formTabla{
+      display: flex;
+      flex-direction: column;
+      width: 65%;
+
+   }
+   .formTablaEditar{
+      display: none;
+   }
+   .mostrarFormEditar{
+      display: flex;
+      flex-direction: column;
+      width: 65%;
+      
+   }
+   .div_tabla{
+      width: 50%;
+   }
+
+   .inputTabla {
+
+      width:100%;
+      height: 30px;
+      color:rgb(7, 7, 6);
+    }
+
+    #buttonAceptarCambios{
+
+      background:  cornflowerblue;
+      color: rgb(250, 250, 250);
+      padding: 2px  6px;
+      border-radius: 10px;
+      font-family: monospace;
+      text-decoration: none;
+      font-size: 17px;
+      margin-right: 25px;
+   }
+
+   .div_parrafo_indx {
+
+      color: black;
+      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: 100%;
+    }
+    .lista-participantes {
+   
+      background-color: rgb(255, 255, 255);
+      font-size: 100%;
+      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      }
+      .carreras {
+         color: rgb(8, 236, 198);
+         border: 4px;
+         border-style:groove;
+         border-color: rgb(11, 90, 236);
+         background-color: rgb(6, 8, 20);
+         width: 100%;
+         height: 30%;
+         text-align: center;
+      }
+      
+      
+       .claselist {
+         
+         margin-left: 2px;
+         margin-top: 1.5%;
+         line-height: 0px;
+         color: cornflowerblue;
+         font-size: small;
+         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+         margin-left: 2%;
+      }
+      
+      .terms-cond {
+      
+         color: black;
+         font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      
+      }
+      
+      .introduccion {
+      
+         display: flex;
+         flex-direction: row;
+         color: rgb(253, 253, 252);
+         font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+         font-size: 100%;
+         padding: 2%;
+      }
+      .inscripcion{
+         background-color: brown;
+      }
+      
+      .Form-login {
+      
+         width: 75%;
+         grid-area: 2/1;
+         background:rgb(54, 49, 49);
+         margin: auto;
+         margin-top: 60px;
+         box-shadow: 7px 13px 37px; color: black;
+         padding: 20px 30px;
+         border: 4px solid rgb(9, 87, 231);
+         color:aliceblue
+      }
+      
+      .Form-login p {
+      
+         margin: 0%;
+         text-align: center;
+         height: 40px;
+         border-bottom: 1px solid;
+         font-size: 20px;
+       
+      } 
+         
+      .Form-login a {
+         
+         color: white;
+         text-decoration: none;
+         font-size:14px;
+      }
+         
+      .Form-login a:hover { 
+         
+         text-decoration: underline;
+         
+      }
+      
+      .controls {
+         display: flex;
+         flex-direction: column;
+         width: 45%;
+         border: 1px solid rgb(12, 240, 190);
+         margin-bottom: 25px;
+         padding: 11px 12px;
+         background-color: white;
+         font-size: 14px;
+         font-weight: bold;
+         
+         line-height: 2px;
+           
+      }
+      
+      .control-login {
+      
+         width: 90%;
+         border: 1px solid rgb(12, 240, 190);
+         margin-bottom: 25px;
+         padding: 11px 12px;
+         background-color: white;
+         font-size: 14px;
+         font-weight: bold;
+         line-height: 2px;
+           
+      }
+      
+      .button-login {
+         
+         width:100%;
+         height: 50px;
+         background:rgb(31, 98, 224);
+         color:beige;
+         margin-bottom: 16px;
+         border-radius: 5px;
+         
+      }
+      
+      .button {
+      
+         width: 50%;
+         height: 40px;
+         background:rgb(31, 98, 224);
+         color:beige;
+         margin-bottom: 16px;         
+         border-radius: 15px;
+      }
+      
+       #captcha{ 
+          color:blanchedalmond;
+          width: 150px;
+          font-size: 30px;
+          font-weight: bold;
+          margin-bottom: 5px;
+       }
+     
+       .btn-menu {
+        
+        display: flex;
+        justify-content: space-evenly;
+        font-family: emoji;
+        color: rgb(255, 255, 255);
+        font-size: medium;
+        background-color: cornflowerblue;
+        width: 25%;
+        padding: 10px;
+        
+       }
+  
+   .integrantes {
+     grid-area: 3/1;     
+     background-color: black;     
+     color:blanchedalmond;
+     
+     }
+
+
+/* MOBILE*/
+
+
+@media only screen and (min-width: 600px) {
+  
+  /* DESKTOP */
+
+  .btn-menu {
+   display: none;
+
+}
+
+  
+  .div_parrafo_indx {
+
+   color: rgb(255, 255, 255);
+   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-size: 100%;
+ }
+  
+  .div_intro_y_tabla {
+   
+   background-color: black;
+   color: white;
+   border-style: inset;
+   border-color: rgb(252, 252, 255);
+   padding: 20px;
+  }
+  .filaResaltada{
+     background-color: gold;
+  }
+  
+  .grid-container {
+      height: 100%;
+      display: grid;
+      background-image: cover;
+      /*grid-template-areas:
+      " header header header"      
+      " main main main"
+      " footer footer footer"
+      }*/
+      grid-template-rows: 3;
+   }
+    
+   .header { grid-area: 1/1; }
+   main { grid-area: 2/1; }
+   .integrantes{ grid-area: 3/1}
+     
+   
+   .header {
+      
+      text-align: center;
+      background-color: black;
+      display: flex;
+      flex-direction: column;
+      color:white
+         
+    }
+
+    .navbar {     
+      background-color: rgb(41, 40, 40);
+    }
+
+
+    
+    .nav-group { 
+      display: flex;
+      flex-direction: row;
+      list-style: none;
+      padding-left: 10px;
+      margin-top: 15px;
+    }
+
+   
+    .nav-button {
+
+      background:  cornflowerblue;
+      color: white;
+      padding: 5px  10px;
+      border-radius: 10px;
+      font-family: monospace;
+      text-decoration: none;
+      font-size: 17px;
+      margin-right: 25px;
+    }
+
+    .nav-item:hover {
+
+      background: rgb(147, 179, 238);
+      color :rgb(0, 0, 0);
+    }   
+
+    main {
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: 100%;
+      background-color: rgb(0, 0, 0);
+      }
+    
+      .contenido{      
+      padding-bottom: 30px;
+      background-color: rgb(0, 0, 0);
+      color: white;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: 100%;
+      display:grid;
+      height: fit-content;
+      grid-template-columns: 2;
+    }
+    .contenido_index{
+       width:100%;
+      background-color: rgb(0, 0, 0);
+      color: white;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: 100%;
+      display:flex;
+      flex-direction: row;
+
+    }
+    
+    .lista-participantes{
+      
+      width: 100%;      
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-style: inset;
+      border-color: white;
+      padding: 20px;
+      color:black;
+      
+    }
+
+    .imgRunning {      
+       
+      width: 30%;  
+      height: 100%;     
+    
+    }
+    .contenedor-carreras {   
+      width: 100%;      
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: black;
+      
+    }
+
+    .carreras {
+      color: rgb(8, 236, 198);
+      border: 4px;
+      border-style:groove;
+      border-color: rgb(11, 90, 236);
+      background-color: rgb(6, 8, 20);   
+      width: 100%;              
+      text-align: center;
+   }
+    .requisitos {
+
+      background-color: white;
+      color: black;
+      font-size: 100%;  
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    }
+    
+    .claselist {
+      
+      margin-left: 2px;
+      margin-top: 1.5%;
+      line-height: 0px;
+      color: cornflowerblue;
+      font-size: small;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      margin-left: 2%;
+   }
+  
+
+   .Form-login {
+   
+      width: 400px;
+      height: 350px;
+      background:rgb(54, 49, 49);
+      margin: auto;
+      margin-top: 60px;
+      box-shadow: 7px 13px 37px; color: black;
+      padding: 20px 30px;
+      border: 4px solid rgb(9, 87, 231);
+      color:aliceblue
+   }
+   
+   .Form-login p {
+   
+      margin: 0%;
+      text-align: center;
+      height: 40px;
+      border-bottom: 1px solid;
+      font-size: 20px;
+   }
+   
+   .Form-login p {
+   
+      height: 40px;
+      text-align: center;
+      border-bottom: 1px solid;
+   }
+      
+   .Form-login a {
+      
+      color: white;
+      text-decoration: none;
+      font-size:14px;
+   }
+      
+   .Form-login a:hover { 
+      
+      text-decoration: underline;
+      
+   }
+
+   
+   .controls {
+   
+      width: 375px;
+      border: 1px solid rgb(12, 240, 190);
+      margin-bottom: 25px;
+      padding: 11px 12px;
+      background-color: white;
+      font-size: 14px;
+      font-weight: bold;
+      margin-left: 65%;
+      line-height: 2px;
+        
+   }
+   
+   .control-login {
+   
+      width: 375px;
+      border: 1px solid rgb(12, 240, 190);
+      margin-bottom: 25px;
+      padding: 11px 12px;
+      background-color: white;
+      font-size: 14px;
+      font-weight: bold;
+      line-height: 2px;
+        
+   }
+   
+   
+   .terms-cond {
+ 
+      color: rgb(255, 255, 255);
+      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: 100%;
+      padding: 2%;
+   
+   }
+   
+   .button-login {
+      
+      width:100%;
+      height: 50px;
+      background:rgb(31, 98, 224);
+      color:beige;
+      margin-bottom: 16px;
+      border-radius: 5px;
+      
+   }
+   
+   .button {
+   
+      width:250px;
+      height: 60px;
+      background:rgb(31, 98, 224);
+      color:beige;
+      margin-bottom: 16px;
+      margin-left: 35%;
+      border-radius: 15px;
+   }
+   
+   .integrantes {
+      padding-top: 80px;     
+      margin-top: 5%;          
+      color:blanchedalmond;
+      border-style:outset;
+      border-color: rgb(68, 67, 67);
+      background-color: black;
+      width: 100%;
+      
+      }
+
+    #captcha{ 
+      color:blanchedalmond;
+      width: 150px;
+      font-size: 30px;
+      font-weight: bold;
+      margin-bottom: 5px;
+   }
+   .forms{
+      display: flex;
+      flex-direction: row;
+      justify-content:space-between;
+   }
+   .formTabla {
+      display: flex;
+      flex-direction: column;
+      width: 25%;
+      
+   }
+   .formTablaEditar{
+      display: none;
+   }
+   .mostrarFormEditar{
+      display: flex;
+      flex-direction: column;
+      width: 25%;      
+   }
+   .body_login {
+
+      background-image: url(../images/fondo.jpg);
+      }
+}
+
+
+
+   
